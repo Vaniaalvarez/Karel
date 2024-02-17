@@ -1,0 +1,13 @@
+class program {
+void avanza(n){
+  iterate(succ(n)){
+  move();
+  }
+  }
+    program () {
+    if(frontIsClear){
+       avanza(5);  
+        turnoff();
+        }
+        }
+    }

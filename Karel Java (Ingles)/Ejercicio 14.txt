@@ -1,0 +1,19 @@
+class program{
+void avanza(n)
+{
+if(anyBeepersInBeeperBag)
+{  
+   putbeeper();
+   avanza(succ(n));
+   }
+   else {
+   iterate(n)
+   move();
+   }
+}
+ program()
+ {
+ avanza(0);
+ turnoff();
+ }
+ }

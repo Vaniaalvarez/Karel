@@ -1,0 +1,63 @@
+class program 
+{
+void turnright()
+  {
+    turnleft();
+    turnleft();
+    turnleft();
+  }
+  void avanza ()
+  {
+    turnright();
+    move();
+    move();
+    turnleft();
+  }
+ void vertical(n)
+ {
+      if (frontIsClear)
+      {
+        move();
+        vertical(succ(n));
+        if(frontIsBlocked)
+        {
+          turnleft();
+          turnleft();
+          pickbeeper();
+          move();
+          }
+          else
+            move();
+        }
+      }
+ void horizontal(n)
+  {
+       if (frontIsClear)
+        {
+          move();
+          horizontal(succ(n));
+          if (facingNorth)
+        {
+          turnright();
+          move();
+        }
+         else
+          move();
+        }
+        else
+        {
+         turnleft();
+         vertical(succ(n));
+        }
+     }         
+    program () {
+      avanza();
+      horizontal(0);
+     turnright();
+     move();
+     move();
+     turnright();
+     putbeeper();
+        turnoff();
+    }
+}

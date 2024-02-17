@@ -1,0 +1,15 @@
+class program {
+    program () {
+        // TODO poner codigo aqui
+        iterate(4)
+        { 
+        if (notFacingNorth) {
+        turnleft();
+        }
+        }
+        turnoff();
+       
+        
+        
+    }
+}
